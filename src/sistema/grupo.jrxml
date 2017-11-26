@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9ffb9d81-b48a-43da-8b2f-b49fd482780d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     BASEASPIRANTES."MATRICULA" AS BASEASPIRANTES_MATRICULA,
+     BASEASPIRANTES."NOMBRE" AS BASEASPIRANTES_NOMBRE,
+     BASEASPIRANTES."APELLIDOPATERNO" AS BASEASPIRANTES_APELLIDOPATERNO,
+     BASEASPIRANTES."APELLIDOMATERNO" AS BASEASPIRANTES_APELLIDOMATERNO,
+     BASEASPIRANTES."GENERACION" AS BASEASPIRANTES_GENERACION,
+     BASEASPIRANTES."CARRERA" AS BASEASPIRANTES_CARRERA,
+     BASEASPIRANTES."TEMATESIS" AS BASEASPIRANTES_TEMATESIS,
+     BASEASPIRANTES."DIRECTORTESIS" AS BASEASPIRANTES_DIRECTORTESIS
+FROM
+     "BDASPIRANTES"."BASEASPIRANTES" BASEASPIRANTES]]>
+	</queryString>
+	<field name="BASEASPIRANTES_MATRICULA" class="java.lang.String"/>
+	<field name="BASEASPIRANTES_NOMBRE" class="java.lang.String"/>
+	<field name="BASEASPIRANTES_APELLIDOPATERNO" class="java.lang.String"/>
+	<field name="BASEASPIRANTES_APELLIDOMATERNO" class="java.lang.String"/>
+	<field name="BASEASPIRANTES_GENERACION" class="java.lang.String"/>
+	<field name="BASEASPIRANTES_CARRERA" class="java.lang.String"/>
+	<field name="BASEASPIRANTES_TEMATESIS" class="java.lang.String"/>
+	<field name="BASEASPIRANTES_DIRECTORTESIS" class="java.lang.String"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="b540b34f-a4dc-4020-a0b1-62f17d489a76"/>
+				<staticText>
+					<reportElement x="20" y="0" width="234" height="43" forecolor="#FFFFFF" uuid="982fe5ae-382f-4c8e-b1df-237946cfce1e"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Aspirantes]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="20" y="63" width="180" height="20" forecolor="#FFFFFF" uuid="3422f639-0175-4243-9f9c-448dada9ab41"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Profesor: Luis Gonzalez]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="453" y="63" width="100" height="20" uuid="180da659-02f5-4c86-9287-319d8c9e84d6"/>
+					<text><![CDATA[ Horario:10:00-14:00]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="453" y="33" width="100" height="20" uuid="636a43b4-da17-4945-a7e2-35d83fccf278"/>
+					<text><![CDATA[Salon A-315]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="334" y="63" width="100" height="20" uuid="ead99554-be5e-4637-8301-31e28accdbe2"/>
+					<text><![CDATA[UACM SLT]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="334" y="33" width="100" height="20" uuid="057d48a5-46b2-4189-9ca5-3e86e33bd4ea"/>
+					<text><![CDATA[Grupo: 301]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="9"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="a53c7af7-efde-491b-839e-1e7c509c22ed"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="86" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="362f9d1e-1d9f-4410-8714-76de8e5f1679"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MAT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="69" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="4d5aa803-7026-4729-81f8-838430f7a829"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOM]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="138" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="6b6a92da-9076-47cb-a7c4-63fd0e3e5c6a"/>
+				<textElement textAlignment="Center" markup="none">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["BASEASPIRANTES_APELLIDOPATERNO"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="207" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="79893cef-e961-4215-a25b-a4fa4b086af6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BASEASPIRANTES_APELLIDOMATERNO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="276" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="378695d9-12a7-43d6-8d0d-8b24af8129a5"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GEN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="345" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="e742dccd-7157-4d89-bd95-04264daf0475"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CARRERA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="414" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="af41564b-81ca-4da9-ab9b-d67515fbb2e7"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TEMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="483" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="0af64038-4bb9-4097-ae60-334ccf8c34ab"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ASESOR]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="f19d25c3-6341-4d29-b5aa-a1d163c8886b"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="69" height="20" uuid="6313d599-68c2-478a-9182-2adc434aee97"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BASEASPIRANTES_MATRICULA}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="69" y="0" width="69" height="20" uuid="e143ed95-5b1f-4cfd-8da5-ca6ef2eb6a76"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BASEASPIRANTES_NOMBRE}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="138" y="0" width="69" height="20" uuid="454db98e-11d3-456d-ac9f-73c11ba3dda4"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BASEASPIRANTES_APELLIDOPATERNO}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="207" y="0" width="69" height="20" uuid="f6a8249a-b781-412a-ad7f-d7e46c78e5ef"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BASEASPIRANTES_APELLIDOMATERNO}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="276" y="0" width="69" height="20" uuid="5cdc82bd-37a3-472f-9362-c4d6300f142d"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BASEASPIRANTES_GENERACION}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="345" y="0" width="69" height="20" uuid="1aba298c-7ccf-43dc-9ac8-d466fe67c847"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BASEASPIRANTES_CARRERA}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="414" y="0" width="69" height="20" uuid="7aa2643d-d462-48db-ba17-106bb877c7e3"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BASEASPIRANTES_TEMATESIS}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="483" y="0" width="69" height="20" uuid="530ad73b-5607-4291-9d31-4ade0b023f3c"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BASEASPIRANTES_DIRECTORTESIS}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="6e7973f2-b016-4b6e-830a-bf265a828fb0"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="5c740c2e-4de8-4405-9cdf-3f2a41dc184d"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="ea9c7b16-ac9b-4084-a95d-e954cbc3253c"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
